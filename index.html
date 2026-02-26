@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Agente de Roteiros 10.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: #121212; color: white; font-family: sans-serif; padding: 20px;">
+    <h1>🎬 Gerador de Roteiros</h1>
+    <input type="password" id="apiKey" placeholder="API Key do Gemini" style="width:100%; padding:10px; margin-bottom:10px;">
+    <textarea id="tema" placeholder="Tema do roteiro..." style="width:100%; height:100px; padding:10px;"></textarea>
+    <select id="paginas" style="width:100%; padding:10px; margin:10px 0;">
+        <option value="10">10 Páginas</option>
+        <option value="20">20 Páginas</option>
+        <option value="30">30 Páginas</option>
+    </select>
+    <button onclick="iniciarGeracao()" style="width:100%; padding:15px; background:#00ff88; border:none; font-weight:bold; cursor:pointer;">GERAR AGORA</button>
+    <div id="statusTexto" style="margin-top:20px; color: #00ff88;"></div>
+    <div id="roteiroFinal" style="margin-top:20px; white-space: pre-wrap; background:white; color:black; padding:15px;"></div>
+    <script src="script.js"></script>
+</body>
+</html>
